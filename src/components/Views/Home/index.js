@@ -23,11 +23,13 @@ class HomeView extends React.Component{
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Container>
+        <Container style={{padding: 10}}>
           <Content>
-            <Text>Open up App.js to start working on your app!</Text>
-            <Text>Changes you make will automatically reload.</Text>
-            <Text>Shake your phone to open the developer menu.</Text>
+            <Text>
+              This application is a tool rebuilt in React-Native aimed at making a deeper indepth
+              experience using various newer packages then what I did earlier this year, this project
+              aims at making the github.com/units-at-monash repo great again.
+            </Text>
             <Button onPress={()=>{navigate('Disclaimer')}} title="Disclaimer"/>
             <Button onPress={()=>{navigate('Unit', {unitCode: "FIT1045"})}} title="FIT1045"/>
           </Content>

@@ -23,9 +23,11 @@ class HomeView extends React.Component{
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Container>
+        <Container  style={{padding: 10}}>
           <Content>
-            <Text>{JSON.stringify(this.props.navigation)}</Text>
+            <Text>
+            The Handbook is the official statement of courses and units available for study at Monash University, published each academic year. Changes made after publication which might affect student enrolment or progression are recorded in the official change register. The Handbook sets out the requirements that must be satisfied for a student to be eligible for course completion and graduation (refer also to How to use the Handbook).
+            </Text>
           </Content>
         </Container>
       </View>

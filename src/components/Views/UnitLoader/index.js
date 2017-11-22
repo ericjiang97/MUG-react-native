@@ -58,7 +58,7 @@ class UnitInfoView extends React.Component{
     return (
       <View style={styles.container}>
         <ScrollView>
-          <Container style={{maxWidth: '80%'}}>
+          <Container style={{maxWidth: '90%'}}>
             {
               !this.state.isLoading ?
               <Card>
@@ -67,24 +67,14 @@ class UnitInfoView extends React.Component{
                     <Text>{unitCode + " - " + unitName}</Text>
                 </CardItem>
                 <CardItem>
-                  <Body>
-                    <Grid>
-                      <Row>
-                        <Col>
-                          <Icon ios="ios-school" android="md-school" />
-                        </Col>
-                      </Row>
-                      <Row>
-                          <Col>
-                              <Icon ios="ios-heart" android="md-heart" />
-                          </Col>
-                          <Col>
-                          <Text>{enjoyScore}</Text>
-                        </Col>
-                      </Row>
-                    </Grid>
-                  </Body>
-                          <Text>{enjoyScore}</Text>
+                  <Text>
+                    {faculty}
+                  </Text>
+                </CardItem>
+                <CardItem>
+                  <Text>
+                    {description}
+                  </Text>
                 </CardItem>
               </Card> :
               <Container>
