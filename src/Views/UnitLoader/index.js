@@ -19,7 +19,8 @@ import {
   Card, 
   Text,
   CardItem,
-  Spinner
+  Spinner,
+  H2
 } from 'native-base'
 
 import { 
@@ -29,7 +30,7 @@ import {
 } from "react-native-easy-grid"
 
 import 'whatwg-fetch'
-import Config from '../../../config/'
+import Config from '../../config/'
 
 class UnitInfoView extends React.Component{
   constructor(){
@@ -64,7 +65,7 @@ class UnitInfoView extends React.Component{
               <Card>
 
                 <CardItem header>
-                    <Text>{unitCode + " - " + unitName}</Text>
+                    <H2>{unitCode + " - " + unitName}</H2>
                 </CardItem>
                 <CardItem>
                   <Text>
@@ -72,7 +73,7 @@ class UnitInfoView extends React.Component{
                   </Text>
                 </CardItem>
                 <CardItem>
-                  <Text>
+                  <Text style={{fontSize: 12}}>
                     {description}
                   </Text>
                 </CardItem>

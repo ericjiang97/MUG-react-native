@@ -32,6 +32,7 @@ class HomeView extends React.Component{
             </Text>
             <Button onPress={()=>{navigate('Disclaimer')}} title="Disclaimer"/>
             <Button onPress={()=>{navigate('Unit', {unitCode: "FIT1045"})}} title="FIT1045"/>
+            <Button onPress={()=>{navigate('BrowseUnits')}} title="Browse for a Unit"/>
           </Content>
         </Container>
       </View>

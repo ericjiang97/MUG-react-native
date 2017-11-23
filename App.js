@@ -2,9 +2,10 @@ import React from 'react';
 import {
   StackNavigator,
 } from 'react-navigation';
-import HomeScreen from './src/components/Views/Home'
-import DisclaimerScreen from './src/components/Views/Disclaimer'
-import UnitLoaderScreen from './src/components/Views/UnitLoader'
+import HomeScreen from './src/Views/Home'
+import DisclaimerScreen from './src/Views/Disclaimer'
+import UnitLoaderScreen from './src/Views/UnitLoader'
+import UnitBrowserScreen from './src/Views/UnitBrowser'
 
 
 const App = StackNavigator({
@@ -20,6 +21,10 @@ const App = StackNavigator({
   Unit: {
     screen: UnitLoaderScreen,
     path: 'unit/:unitCode'
+  },
+  BrowseUnits: {
+    screen: UnitBrowserScreen,
+    path: 'unit'
   }
 })
 export default App
